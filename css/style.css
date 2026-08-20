@@ -30,7 +30,7 @@ body {
   background-color: #fff;
 }
 
-.filter-panel__item button {
+.filter-panel__button {
   padding: 13px 24px 12px;
   border: 1px solid #E5E7EB;
   border-radius: 12px;
@@ -41,15 +41,16 @@ body {
   background-color: #fff;
   transition: .3s;
 }
-.filter-panel__item button:hover {
+
+.filter-panel__button:hover {
   background-color: #eae7e7;
 }
 
-.filter-panel__item.is-active button {
+.filter-panel__button.is-active {
   color: #fff;
   background-color: #523EE8;
 }
 
-.filter-panel__item.is-active button:hover {
+.filter-panel__button.is-active:hover {
   background-color: #3829a4;
 }

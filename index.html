@@ -10,18 +10,28 @@
 </head>
 <body>
   <ul class="filter-panel">
-    <li class="filter-panel__item is-active">
-      Все
+    <li class="filter-panel__item">
+      <button class="filter-panel__button is-active">Все</button>
     </li>
     <li class="filter-panel__item">
-      HTML
+      <button class="filter-panel__button">HTML</button>
     </li>
     <li class="filter-panel__item">
-      CSS
+      <button class="filter-panel__button">CSS</button>
     </li>
     <li class="filter-panel__item">
-      JavaScript
+      <button class="filter-panel__button">JavaScript</button>
     </li>
   </ul>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-panel__button');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(button => button.classList.remove('is-active'))
+        button.classList.add('is-active');
+      })
+    })
+  </script>
 </body>
 </html>
